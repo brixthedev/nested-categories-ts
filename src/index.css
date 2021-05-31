@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Operator Mono Lig", "Nunito", sans-serif;
+}
+
+body {
+  padding: 4px;
+}
+
+div div {
+  padding: 8px;
+  margin: 8px;
+  border: 1px black dashed;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background-color: transparent;
+  padding: 0 16px;
+  margin-top: 4px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+button:hover,
+button:active {
+  background-color: black;
+  color: white;
+}
