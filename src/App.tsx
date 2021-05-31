@@ -4,7 +4,7 @@ import staticCategories, { StaticCategories } from "./staticCategories";
 import RenderCategories from "./renderCategories";
 
 const App: FC = () => {
-  const [nestedCategories, setNestedCategories] = useState(staticCategories);
+  const [nestedCategories, setNestedCategories] = useState<StaticCategories[]>([]);
 
   useEffect(() => {
     setNestedCategories(staticCategories);
