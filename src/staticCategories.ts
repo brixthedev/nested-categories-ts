@@ -1,15 +1,6 @@
 export interface StaticCategories {
   name: string;
-  categories: {
-    name: string;
-    categories: {
-      name: string;
-      categories: {
-        name: string;
-        categories: never[];
-      }[];
-    }[];
-  }[];
+  categories: StaticCategories[];
 }
 
 const staticCategories: StaticCategories[] = [
